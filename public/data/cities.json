@@ -1,0 +1,88 @@
+{
+  "cities": [
+    {
+      "cityName": "Berlin",
+      "country": "Germany",
+      "emoji": "🇩🇪",
+      "date": "2027-02-12T09:24:11.863Z",
+      "notes": "Amazing 😃",
+      "position": {
+        "lat": 52.53586782505711,
+        "lng": 13.376933665713324
+      },
+      "id": "98443197"
+    },
+    {
+      "id": "3814",
+      "cityName": "Evora",
+      "country": "Portugal",
+      "date": "2024-10-28T11:04:42.200Z",
+      "emoji": "PT",
+      "notes": "",
+      "position": {
+        "lat": 38.68665186811698,
+        "lng": -7.749718433680913
+      }
+    },
+    {
+      "id": "865c",
+      "cityName": "Cairo",
+      "country": "Egypt",
+      "date": "2024-10-28T11:44:14.353Z",
+      "emoji": "EG",
+      "notes": "",
+      "position": {
+        "lat": 30.044258098932634,
+        "lng": 31.30416870117188
+      }
+    },
+    {
+      "id": "e8d4",
+      "cityName": "Cairo",
+      "country": "Egypt",
+      "date": "2024-10-28T11:44:18.327Z",
+      "emoji": "EG",
+      "notes": "",
+      "position": {
+        "lat": 30.031178515681564,
+        "lng": 31.50466918945313
+      }
+    },
+    {
+      "id": "6c7b",
+      "cityName": "Giza",
+      "country": "Egypt",
+      "date": "2024-12-17T11:51:56.504Z",
+      "emoji": "EG",
+      "notes": "",
+      "position": {
+        "lat": 30.040803471884047,
+        "lng": 30.950071305130287
+      }
+    },
+    {
+      "id": "7209",
+      "cityName": "Giza",
+      "country": "Egypt",
+      "date": "2024-12-17T11:58:34.015Z",
+      "emoji": "EG",
+      "notes": "",
+      "position": {
+        "lat": 30.16906057772934,
+        "lng": 31.13279151682692
+      }
+    },
+    {
+      "id": "e088",
+      "cityName": "Cairo",
+      "country": "Egypt",
+      "date": "2024-12-17T11:58:37.118Z",
+      "emoji": "EG",
+      "notes": "",
+      "position": {
+        "lat": 30.134723456055365,
+        "lng": 31.638260536182386
+      }
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+.app {
+  height: 100dvh;
+  padding: 2.4rem;
+  overscroll-behavior-y: none;
+  display: flex;
+  position: relative;
+}
+
+@media (max-width: 1047px) {
+  .app {
+    padding: 0;
+    /* background: var(--color-dark--2); */
+  }
+}

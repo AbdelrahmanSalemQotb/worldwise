@@ -1,0 +1,18 @@
+@import "./PageNotFound.module.css";
+
+.buttonGroup {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  gap: 1rem;
+}
+
+.errorMessage {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 2rem;
+  color: rgba(255, 0, 0, 0.8);
+  background-color: var(--color-light--3);
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+}

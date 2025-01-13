@@ -1,0 +1,164 @@
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 3rem;
+}
+
+.nav .navList {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  transition: opacity 0.3s, visibility 0.3s, transform 0.5s;
+}
+
+.menuButton {
+  display: none;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  background-color: var(--color-dark--2);
+  padding: 0.5rem;
+  margin-left: auto;
+}
+
+.menuButton svg {
+  background-color: var(--color-dark--2);
+  width: 2rem;
+  border-radius: 5px;
+
+  height: 2rem;
+}
+
+.menuButton .hamburger {
+  position: relative;
+  width: 24px;
+  height: 22px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.hamburger span {
+  position: absolute;
+  height: 3px;
+  background-color: var(--color-light--1);
+  transition: all 0.3s;
+  left: 0;
+  border-radius: 3px;
+}
+
+.hamburger span:first-child {
+  width: 100%;
+  top: 1px;
+}
+
+.hamburger span:nth-child(2) {
+  width: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.hamburger span:last-child {
+  width: 30%;
+  bottom: 0;
+}
+
+.menuButton.active .hamburger span {
+  width: 100%;
+}
+
+.menuButton.active .hamburger span:first-child {
+  transform: rotate(45deg);
+  top: 10px;
+}
+
+.menuButton.active .hamburger span:nth-child(2) {
+  opacity: 0;
+}
+
+.menuButton.active .hamburger span:last-child {
+  transform: rotate(-45deg);
+  bottom: 9px;
+}
+
+.nav a.NavLink:link,
+.nav a.NavLink:visited {
+  text-decoration: none;
+  color: var(--color-light--2);
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding: 1rem;
+}
+
+/* CSS Modules feature */
+.nav a.NavLink:global(.active) {
+  color: var(--color-brand--2);
+}
+
+.navList a.ctaLink:link,
+.navList a.ctaLink:visited {
+  background-color: var(--color-brand--2);
+  color: var(--color-dark--0);
+  padding: 0.8rem 2rem;
+  border-radius: 7px;
+}
+
+@media screen and (max-width: 850px) {
+  .nav {
+    position: relative;
+    justify-content: center;
+  }
+
+  .hidden {
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .nav .navList {
+    position: absolute;
+    z-index: 10;
+    padding: 2rem;
+    background-color: var(--color-dark--2);
+    width: 100dvw;
+    top: 100%;
+    justify-content: space-around;
+    transform: translateY(0);
+  }
+
+  .navList.hidden {
+    transform: translateY(-100%);
+  }
+
+  .menuButton {
+    display: block;
+  }
+
+  .navList a.ctaLink:link,
+  .navList a.ctaLink:visited {
+    background-color: transparent;
+    color: var(--color-light--2);
+    padding: 1rem;
+    border-radius: 0;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .nav .navList {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 1rem;
+  }
+
+  .navList li {
+    text-align: center;
+  }
+
+  .navList a.NavLink:link,
+  .navList a.NavLink:visited {
+    padding: 1rem 0;
+    display: block;
+  }
+}
