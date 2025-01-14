@@ -10,8 +10,8 @@ import { useUser } from "../features/user/useUser";
 import styles from "./Login.module.css";
 
 export default function Login() {
-  const [email, setEmail] = useState("salem@example.com");
-  const [password, setPassword] = useState("qwerty");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
   const [localError, setLocalError] = useState("");
 
   const { isLoadingUser, user, isAuthenticated } = useUser();
